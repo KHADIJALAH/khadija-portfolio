@@ -41,9 +41,9 @@ export default function Hero() {
             <span className="gradient-text-2 font-semibold">Développeuse Web Full Stack</span>
           </h2>
           <p className="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">
-            Diplômée de l&apos;OFPPT, passionnée par le développement web,
-            la gestion de bases de données et la conception d&apos;interfaces.
-            Je transforme vos idées en applications web modernes et performantes.
+            Passionnée par le développement web, la gestion de bases de données
+            et la conception d&apos;interfaces. Je transforme vos idées en
+            applications web modernes et performantes.
           </p>
         </motion.div>
 
@@ -82,15 +82,14 @@ export default function Hero() {
           className="flex items-center justify-center gap-6"
         >
           {[
-            { icon: FiGithub, href: 'https://github.com/khadijalahlou', label: 'GitHub' },
-            { icon: FiLinkedin, href: 'https://linkedin.com/in/khadija-lahlou', label: 'LinkedIn' },
+            { icon: FiGithub, href: 'https://github.com/KHADIJALAH', label: 'GitHub' },
+            { icon: FiLinkedin, href: 'https://www.linkedin.com/in/khadija-lahlou-48a8062b9', label: 'LinkedIn' },
             { icon: FiMail, href: 'mailto:khadijadev728@gmail.com', label: 'Email' },
           ].map((social) => (
             <motion.a
               key={social.label}
               href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
+              {...(social.label !== 'Email' && { target: '_blank', rel: 'noopener noreferrer' })}
               whileHover={{ scale: 1.2, y: -3 }}
               whileTap={{ scale: 0.9 }}
               className="w-12 h-12 rounded-full glass flex items-center justify-center text-gray-300 hover:text-white hover:bg-purple-500/20 transition-all"

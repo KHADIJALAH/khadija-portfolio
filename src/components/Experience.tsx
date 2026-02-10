@@ -45,7 +45,7 @@ const education = [
     id: 1,
     degree: 'Diplôme Technicien Spécialisé',
     field: 'Développement Digital',
-    school: 'OFPPT',
+    school: 'Institut de Formation Professionnelle',
     period: '2023 - 2025',
     description: 'Formation complète en développement web full stack, bases de données et conception d\'interfaces.'
   },

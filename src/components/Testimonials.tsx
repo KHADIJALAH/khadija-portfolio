@@ -29,7 +29,7 @@ const testimonials = [
   },
   {
     id: 3,
-    name: 'Formateurs OFPPT',
+    name: 'Formateurs Institut',
     role: 'Institut de Formation',
     image: null,
     initials: 'OF',
@@ -165,7 +165,7 @@ export default function Testimonials() {
         >
           {[
             { value: '2', label: 'Stages Professionnels' },
-            { value: '2025', label: 'Diplômée OFPPT' },
+            { value: '2025', label: 'Année de Diplôme' },
             { value: '2', label: 'Certifications Cisco' },
             { value: '100%', label: 'Engagement' },
           ].map((stat, index) => (

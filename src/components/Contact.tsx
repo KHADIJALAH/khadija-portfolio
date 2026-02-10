@@ -30,8 +30,8 @@ const contactInfo = [
 ]
 
 const socialLinks = [
-  { icon: FiGithub, href: 'https://github.com/khadijalahlou', label: 'GitHub' },
-  { icon: FiLinkedin, href: 'https://linkedin.com/in/khadija-lahlou', label: 'LinkedIn' },
+  { icon: FiGithub, href: 'https://github.com/KHADIJALAH', label: 'GitHub' },
+  { icon: FiLinkedin, href: 'https://www.linkedin.com/in/khadija-lahlou-48a8062b9', label: 'LinkedIn' },
 ]
 
 export default function Contact() {
@@ -50,14 +50,44 @@ export default function Contact() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500))
+    try {
+      // Using Web3Forms - Free email service
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: '2afe617e-a11c-47ec-b444-f77cf85e57b6',
+          name: formState.name,
+          email: formState.email,
+          subject: formState.subject,
+          message: formState.message,
+          to_email: 'khadijadev728@gmail.com',
+        }),
+      })
+
+      const result = await response.json()
+
+      if (result.success) {
+        setSubmitStatus('success')
+        setFormState({ name: '', email: '', subject: '', message: '' })
+      } else {
+        // Fallback: Open email client with pre-filled data
+        const mailtoLink = `mailto:khadijadev728@gmail.com?subject=${encodeURIComponent(formState.subject)}&body=${encodeURIComponent(`Nom: ${formState.name}\nEmail: ${formState.email}\n\nMessage:\n${formState.message}`)}`
+        window.open(mailtoLink, '_blank')
+        setSubmitStatus('success')
+        setFormState({ name: '', email: '', subject: '', message: '' })
+      }
+    } catch {
+      // Fallback: Open email client with pre-filled data
+      const mailtoLink = `mailto:khadijadev728@gmail.com?subject=${encodeURIComponent(formState.subject)}&body=${encodeURIComponent(`Nom: ${formState.name}\nEmail: ${formState.email}\n\nMessage:\n${formState.message}`)}`
+      window.open(mailtoLink, '_blank')
+      setSubmitStatus('success')
+      setFormState({ name: '', email: '', subject: '', message: '' })
+    }
 
     setIsSubmitting(false)
-    setSubmitStatus('success')
-    setFormState({ name: '', email: '', subject: '', message: '' })
-
-    // Reset status after 3 seconds
     setTimeout(() => setSubmitStatus('idle'), 3000)
   }
 
@@ -172,7 +202,7 @@ export default function Contact() {
             <form onSubmit={handleSubmit} className="glass-card rounded-2xl p-8">
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div>
-                  <label className="block text-sm text-gray-400 mb-2">Nom complet</label>
+                  <label className="block text-sm text-gray-400 mb-2">Nom complet *</label>
                   <input
                     type="text"
                     name="name"
@@ -184,7 +214,7 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm text-gray-400 mb-2">Email</label>
+                  <label className="block text-sm text-gray-400 mb-2">Email *</label>
                   <input
                     type="email"
                     name="email"
@@ -198,7 +228,7 @@ export default function Contact() {
               </div>
 
               <div className="mb-6">
-                <label className="block text-sm text-gray-400 mb-2">Sujet</label>
+                <label className="block text-sm text-gray-400 mb-2">Sujet *</label>
                 <input
                   type="text"
                   name="subject"
@@ -211,7 +241,7 @@ export default function Contact() {
               </div>
 
               <div className="mb-6">
-                <label className="block text-sm text-gray-400 mb-2">Message</label>
+                <label className="block text-sm text-gray-400 mb-2">Message *</label>
                 <textarea
                   name="message"
                   value={formState.message}
@@ -247,6 +277,10 @@ export default function Contact() {
                   </>
                 )}
               </motion.button>
+
+              <p className="text-xs text-gray-500 text-center mt-4">
+                En cliquant sur envoyer, votre application email s&apos;ouvrira avec le message pré-rempli.
+              </p>
             </form>
           </motion.div>
         </div>

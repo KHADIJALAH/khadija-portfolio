@@ -13,8 +13,8 @@ const navLinks = [
 ]
 
 const socialLinks = [
-  { icon: FiGithub, href: 'https://github.com/khadijalahlou', label: 'GitHub' },
-  { icon: FiLinkedin, href: 'https://linkedin.com/in/khadija-lahlou', label: 'LinkedIn' },
+  { icon: FiGithub, href: 'https://github.com/KHADIJALAH', label: 'GitHub' },
+  { icon: FiLinkedin, href: 'https://www.linkedin.com/in/khadija-lahlou-48a8062b9', label: 'LinkedIn' },
   { icon: FiMail, href: 'mailto:khadijadev728@gmail.com', label: 'Email' },
 ]
 
@@ -36,16 +36,15 @@ export default function Footer() {
               Khadija Lahlou
             </a>
             <p className="text-gray-400 mb-6">
-              Développeuse Web Full Stack diplômée de l&apos;OFPPT,
-              passionnée par la création d&apos;applications web modernes et innovantes.
+              Développeuse Web Full Stack passionnée par la création
+              d&apos;applications web modernes et innovantes.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (
                 <motion.a
                   key={social.label}
                   href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  {...(social.label !== 'Email' && { target: '_blank', rel: 'noopener noreferrer' })}
                   whileHover={{ scale: 1.1, y: -2 }}
                   className="w-10 h-10 rounded-full glass flex items-center justify-center text-gray-400 hover:text-white hover:bg-purple-500/20 transition-all"
                 >

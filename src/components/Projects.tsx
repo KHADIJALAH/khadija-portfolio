@@ -8,69 +8,47 @@ import { FiGithub, FiExternalLink, FiFolder } from 'react-icons/fi'
 const projects = [
   {
     id: 1,
-    title: 'JetStream - Gestion de Voyages',
-    description: 'Application web complète de gestion de voyages développée pendant mon stage chez Hooked Digital. Interface moderne avec gestion des réservations, clients et itinéraires.',
+    title: 'ShopVibe - E-Commerce Store',
+    description: 'Boutique en ligne moderne et complète avec panier, wishlist, filtres par catégories, page checkout avec Stripe, et animations fluides. Design responsive avec une UX soignée.',
     image: '/images/project1.jpg',
-    tags: ['Laravel', 'Tailwind CSS', 'MySQL', 'PHP', 'REST API'],
+    tags: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'Zustand', 'Stripe', 'Framer Motion'],
     category: 'fullstack',
-    github: 'https://github.com/khadijalahlou/jetstream',
+    github: 'https://github.com/KHADIJALAH/ecommerce-store',
     live: '#',
     color: 'from-purple-500 to-pink-500'
   },
   {
     id: 2,
-    title: 'Modules Odoo Personnalisés',
-    description: 'Développement de modules personnalisés pour Odoo ERP chez YMH Innovation. Fonctionnalités avancées en Python et JavaScript pour optimiser les processus métier.',
+    title: 'SaaS Dashboard',
+    description: 'Dashboard analytique SaaS avec authentification NextAuth, graphiques interactifs Recharts, gestion utilisateurs, tables de données avancées et thème sombre/clair.',
     image: '/images/project2.jpg',
-    tags: ['Python', 'JavaScript', 'Odoo', 'PostgreSQL', 'XML'],
-    category: 'backend',
-    github: 'https://github.com/khadijalahlou',
+    tags: ['Next.js 14', 'TypeScript', 'NextAuth', 'Recharts', 'Zustand', 'TanStack Table'],
+    category: 'fullstack',
+    github: 'https://github.com/KHADIJALAH/saas-dashboard',
     live: '#',
     color: 'from-blue-500 to-cyan-500'
   },
   {
     id: 3,
-    title: 'Interface Next.js Moderne',
-    description: 'Interfaces utilisateur modernes et réactives développées avec Next.js pour améliorer l\'expérience utilisateur des applications Odoo.',
+    title: 'InvoiceFlow - Gestion de Factures',
+    description: 'Application de facturation complète avec framework MVC PHP custom. Gestion des factures, clients, produits, rapports et dashboard avec interface Tailwind CSS moderne.',
     image: '/images/project3.jpg',
-    tags: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript', 'Framer Motion'],
-    category: 'frontend',
-    github: 'https://github.com/khadijalahlou',
+    tags: ['PHP', 'MVC', 'MySQL', 'Tailwind CSS', 'JavaScript'],
+    category: 'fullstack',
+    github: 'https://github.com/KHADIJALAH/php-mvc-framework',
     live: '#',
-    color: 'from-green-500 to-emerald-500'
+    color: 'from-orange-500 to-amber-500'
   },
   {
     id: 4,
     title: 'Portfolio Personnel',
-    description: 'Mon portfolio personnel avec un design moderne, des animations fluides et une expérience utilisateur optimisée.',
+    description: 'Mon portfolio personnel avec un design moderne dark theme, animations fluides Framer Motion, formulaire de contact EmailJS et navigation interactive.',
     image: '/images/project4.jpg',
-    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    tags: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'EmailJS'],
     category: 'frontend',
-    github: 'https://github.com/khadijalahlou/portfolio',
+    github: 'https://github.com/KHADIJALAH/khadija-portfolio',
     live: '#',
-    color: 'from-orange-500 to-red-500'
-  },
-  {
-    id: 5,
-    title: 'Application CRUD Laravel',
-    description: 'Application de gestion complète avec authentification, CRUD, validation et interface admin responsive.',
-    image: '/images/project5.jpg',
-    tags: ['Laravel', 'Bootstrap', 'MySQL', 'PHP', 'Blade'],
-    category: 'fullstack',
-    github: 'https://github.com/khadijalahlou',
-    live: '#',
-    color: 'from-violet-500 to-purple-500'
-  },
-  {
-    id: 6,
-    title: 'API REST Node.js',
-    description: 'API RESTful avec Node.js et Express, authentification JWT, documentation Swagger et tests unitaires.',
-    image: '/images/project6.jpg',
-    tags: ['Node.js', 'Express', 'MongoDB', 'JWT', 'Swagger'],
-    category: 'backend',
-    github: 'https://github.com/khadijalahlou',
-    live: '#',
-    color: 'from-sky-500 to-blue-500'
+    color: 'from-green-500 to-emerald-500'
   },
 ]
 
@@ -208,7 +186,7 @@ export default function Projects() {
           className="text-center mt-12"
         >
           <a
-            href="https://github.com/khadijalahlou"
+            href="https://github.com/KHADIJALAH"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary inline-flex items-center gap-2"

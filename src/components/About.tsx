@@ -78,7 +78,7 @@ export default function About() {
                 transition={{ duration: 3, repeat: Infinity }}
                 className="absolute -top-4 -right-4 glass rounded-2xl px-4 py-2"
               >
-                <span className="text-sm font-semibold gradient-text">OFPPT 2025</span>
+                <span className="text-sm font-semibold gradient-text">Diplômée 2025</span>
               </motion.div>
               <motion.div
                 animate={{ y: [0, 10, 0] }}
@@ -101,7 +101,7 @@ export default function About() {
             </h3>
             <div className="space-y-4 text-gray-300 mb-8">
               <p>
-                Je suis Khadija Lahlou, développeuse web full stack diplômée en 2025 de l&apos;OFPPT.
+                Je suis Khadija Lahlou, développeuse web full stack diplômée en 2025.
                 J&apos;ai acquis une solide expérience à travers ma formation pratique et mes projets,
                 en développement web, en gestion de bases de données et en conception d&apos;interfaces.
               </p>
