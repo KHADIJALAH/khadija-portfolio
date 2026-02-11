@@ -9,7 +9,7 @@ const projects = [
   {
     id: 1,
     title: 'ShopVibe - E-Commerce Store',
-    description: 'Boutique en ligne moderne et complète avec panier, wishlist, filtres par catégories, page checkout avec Stripe, et animations fluides. Design responsive avec une UX soignée.',
+    description: 'Modern and complete online store with cart, wishlist, category filters, Stripe checkout page, and smooth animations. Responsive design with polished UX.',
     image: '/images/project1.jpg',
     tags: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'Zustand', 'Stripe', 'Framer Motion'],
     category: 'fullstack',
@@ -20,7 +20,7 @@ const projects = [
   {
     id: 2,
     title: 'SaaS Dashboard',
-    description: 'Dashboard analytique SaaS avec authentification NextAuth, graphiques interactifs Recharts, gestion utilisateurs, tables de données avancées et thème sombre/clair.',
+    description: 'SaaS analytics dashboard with NextAuth authentication, interactive Recharts graphs, user management, advanced data tables and dark/light theme.',
     image: '/images/project2.jpg',
     tags: ['Next.js 14', 'TypeScript', 'NextAuth', 'Recharts', 'Zustand', 'TanStack Table'],
     category: 'fullstack',
@@ -30,8 +30,8 @@ const projects = [
   },
   {
     id: 3,
-    title: 'InvoiceFlow - Gestion de Factures',
-    description: 'Application de facturation complète avec framework MVC PHP custom. Gestion des factures, clients, produits, rapports et dashboard avec interface Tailwind CSS moderne.',
+    title: 'InvoiceFlow - Invoice Management',
+    description: 'Complete invoicing application with custom PHP MVC framework. Invoice, client, product and report management with a modern Tailwind CSS dashboard.',
     image: '/images/project3.jpg',
     tags: ['PHP', 'MVC', 'MySQL', 'Tailwind CSS', 'JavaScript'],
     category: 'fullstack',
@@ -41,8 +41,8 @@ const projects = [
   },
   {
     id: 4,
-    title: 'Portfolio Personnel',
-    description: 'Mon portfolio personnel avec un design moderne dark theme, animations fluides Framer Motion, formulaire de contact EmailJS et navigation interactive.',
+    title: 'Personal Portfolio',
+    description: 'My personal portfolio with a modern dark theme design, smooth Framer Motion animations, EmailJS contact form and interactive navigation.',
     image: '/images/project4.jpg',
     tags: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'EmailJS'],
     category: 'frontend',
@@ -53,7 +53,7 @@ const projects = [
 ]
 
 const categories = [
-  { id: 'all', label: 'Tous' },
+  { id: 'all', label: 'All' },
   { id: 'fullstack', label: 'Full Stack' },
   { id: 'frontend', label: 'Frontend' },
   { id: 'backend', label: 'Backend' },
@@ -78,10 +78,10 @@ export default function Projects() {
           className="text-center mb-16"
         >
           <h2 className="section-title">
-            Mes <span className="gradient-text">Projets</span>
+            My <span className="gradient-text">Projects</span>
           </h2>
           <p className="section-subtitle">
-            Découvrez mes réalisations récentes et les technologies utilisées
+            Discover my recent work and the technologies used
           </p>
         </motion.div>
 
@@ -192,7 +192,7 @@ export default function Projects() {
             className="btn-secondary inline-flex items-center gap-2"
           >
             <FiGithub />
-            Voir plus sur GitHub
+            View more on GitHub
           </a>
         </motion.div>
       </div>

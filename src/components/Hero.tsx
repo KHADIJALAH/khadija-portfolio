@@ -15,7 +15,7 @@ export default function Hero() {
           className="mb-6"
         >
           <span className="inline-block px-4 py-2 rounded-full glass text-sm text-purple-300">
-            Bienvenue sur mon portfolio
+            Welcome to my portfolio
           </span>
         </motion.div>
 
@@ -26,7 +26,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6"
         >
-          <span className="text-white">Je suis </span>
+          <span className="text-white">I am </span>
           <span className="gradient-text">Khadija Lahlou</span>
         </motion.h1>
 
@@ -38,12 +38,12 @@ export default function Hero() {
           className="mb-8"
         >
           <h2 className="text-2xl md:text-3xl lg:text-4xl text-gray-300 font-light">
-            <span className="gradient-text-2 font-semibold">Développeuse Web Full Stack</span>
+            <span className="gradient-text-2 font-semibold">Full Stack Web Developer</span>
           </h2>
           <p className="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">
-            Passionnée par le développement web, la gestion de bases de données
-            et la conception d&apos;interfaces. Je transforme vos idées en
-            applications web modernes et performantes.
+            Passionate about web development, database management
+            and interface design. I turn your ideas into
+            modern and high-performance web applications.
           </p>
         </motion.div>
 
@@ -60,7 +60,7 @@ export default function Hero() {
             whileTap={{ scale: 0.95 }}
             className="btn-primary flex items-center gap-2"
           >
-            Voir mes projets
+            View my projects
             <FiArrowDown className="animate-bounce" />
           </motion.a>
           <motion.a
@@ -70,7 +70,7 @@ export default function Hero() {
             className="btn-secondary flex items-center gap-2"
           >
             <FiDownload />
-            Télécharger CV
+            Download CV
           </motion.a>
         </motion.div>
 

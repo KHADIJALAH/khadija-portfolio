@@ -9,31 +9,31 @@ import { FaQuoteLeft } from 'react-icons/fa'
 const testimonials = [
   {
     id: 1,
-    name: 'Équipe Hooked Digital',
+    name: 'Hooked Digital Team',
     role: 'Casablanca',
     image: null,
     initials: 'HD',
-    content: 'Khadija a su développer l\'application JetStream avec professionnalisme et créativité. Son attention aux détails et sa capacité à comprendre les besoins du projet ont été remarquables.',
+    content: 'Khadija developed the JetStream application with professionalism and creativity. Her attention to detail and ability to understand project requirements were remarkable.',
     rating: 5,
     color: 'from-purple-500 to-pink-500'
   },
   {
     id: 2,
-    name: 'Équipe YMH Innovation',
+    name: 'YMH Innovation Team',
     role: 'Casablanca',
     image: null,
     initials: 'YI',
-    content: 'Une stagiaire exceptionnelle qui maîtrise à la fois Odoo et les technologies modernes comme Next.js. Son adaptabilité et sa volonté d\'apprendre sont impressionnantes.',
+    content: 'An exceptional intern who masters both Odoo and modern technologies like Next.js. Her adaptability and willingness to learn are impressive.',
     rating: 5,
     color: 'from-blue-500 to-cyan-500'
   },
   {
     id: 3,
-    name: 'Formateurs Institut',
-    role: 'Institut de Formation',
+    name: 'Institute Trainers',
+    role: 'Training Institute',
     image: null,
     initials: 'OF',
-    content: 'Khadija s\'est distinguée par son sérieux et son engagement tout au long de sa formation. Ses projets de fin d\'études témoignent de sa maîtrise technique.',
+    content: 'Khadija stood out through her dedication and commitment throughout her training. Her final projects demonstrate her technical expertise.',
     rating: 5,
     color: 'from-green-500 to-emerald-500'
   },
@@ -67,10 +67,10 @@ export default function Testimonials() {
           className="text-center mb-16"
         >
           <h2 className="section-title">
-            Retours <span className="gradient-text">d&apos;Expérience</span>
+            <span className="gradient-text">Testimonials</span>
           </h2>
           <p className="section-subtitle">
-            Ce que mes collaborateurs et formateurs disent de mon travail
+            What my colleagues and trainers say about my work
           </p>
         </motion.div>
 
@@ -164,10 +164,10 @@ export default function Testimonials() {
           className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
         >
           {[
-            { value: '2', label: 'Stages Professionnels' },
-            { value: '2025', label: 'Année de Diplôme' },
-            { value: '2', label: 'Certifications Cisco' },
-            { value: '100%', label: 'Engagement' },
+            { value: '2', label: 'Professional Internships' },
+            { value: '2025', label: 'Graduation Year' },
+            { value: '2', label: 'Cisco Certifications' },
+            { value: '100%', label: 'Commitment' },
           ].map((stat, index) => (
             <motion.div
               key={stat.label}

@@ -8,32 +8,32 @@ import { FiBriefcase, FiCalendar, FiMapPin } from 'react-icons/fi'
 const experiences = [
   {
     id: 1,
-    role: 'Stagiaire Développeuse Web',
+    role: 'Web Developer Intern',
     company: 'YMH Innovation',
-    location: 'Casablanca, Maroc',
-    period: 'Août 2025 - En cours',
-    description: 'Stage pré-emploi en développement web avec focus sur les technologies modernes et ERP.',
+    location: 'Casablanca, Morocco',
+    period: 'Aug 2025 - Present',
+    description: 'Pre-employment internship in web development with a focus on modern technologies and ERP.',
     achievements: [
-      'Développement de fonctionnalités en Python et JavaScript sous Odoo',
-      'Création d\'interfaces modernes avec Next.js',
-      'Optimisation de l\'expérience utilisateur',
-      'Travail en équipe sur des projets clients'
+      'Developing features in Python and JavaScript with Odoo',
+      'Building modern interfaces with Next.js',
+      'Optimizing user experience',
+      'Collaborating with teams on client projects'
     ],
     color: 'from-purple-500 to-pink-500',
     current: true
   },
   {
     id: 2,
-    role: 'Stagiaire Développeuse Web',
+    role: 'Web Developer Intern',
     company: 'Hooked Digital',
-    location: 'Casablanca, Maroc',
-    period: 'Mars 2025',
-    description: 'Développement d\'une application web complète de gestion de voyages.',
+    location: 'Casablanca, Morocco',
+    period: 'March 2025',
+    description: 'Development of a complete travel management web application.',
     achievements: [
-      'Développement complet de l\'application JetStream',
-      'Utilisation de Laravel comme framework backend',
-      'Design responsive avec Tailwind CSS',
-      'Gestion de base de données et API REST'
+      'Full development of the JetStream application',
+      'Using Laravel as the backend framework',
+      'Responsive design with Tailwind CSS',
+      'Database management and REST API'
     ],
     color: 'from-blue-500 to-cyan-500',
     current: false
@@ -43,32 +43,32 @@ const experiences = [
 const education = [
   {
     id: 1,
-    degree: 'Diplôme Technicien Spécialisé',
-    field: 'Développement Digital',
-    school: 'Institut de Formation Professionnelle',
+    degree: 'Specialized Technician Diploma',
+    field: 'Digital Development',
+    school: 'Professional Training Institute',
     period: '2023 - 2025',
-    description: 'Formation complète en développement web full stack, bases de données et conception d\'interfaces.'
+    description: 'Comprehensive training in full stack web development, databases and interface design.'
   },
   {
     id: 2,
-    degree: 'Baccalauréat',
-    field: 'Sciences Physiques - Option Français',
-    school: 'École IBN SINA, SAFI',
+    degree: 'Baccalaureate',
+    field: 'Physical Sciences - French Option',
+    school: 'IBN SINA School, SAFI',
     period: '2022 - 2023',
-    description: 'Mention Assez Bien'
+    description: 'Honors'
   },
 ]
 
 const certifications = [
   {
-    name: 'Certification Python',
+    name: 'Python Certification',
     issuer: 'Cisco',
-    description: 'Programmation orientée objet, manipulation de données et automatisation'
+    description: 'Object-oriented programming, data manipulation and automation'
   },
   {
-    name: 'Certification JavaScript',
+    name: 'JavaScript Certification',
     issuer: 'Cisco',
-    description: 'Développement dynamique, manipulation du DOM et applications front-end/back-end'
+    description: 'Dynamic development, DOM manipulation and front-end/back-end applications'
   },
 ]
 
@@ -86,10 +86,10 @@ export default function Experience() {
           className="text-center mb-16"
         >
           <h2 className="section-title">
-            Mon <span className="gradient-text">Parcours</span>
+            My <span className="gradient-text">Journey</span>
           </h2>
           <p className="section-subtitle">
-            Mon expérience professionnelle et mon parcours académique
+            My professional experience and academic background
           </p>
         </motion.div>
 
@@ -98,7 +98,7 @@ export default function Experience() {
           <div className="lg:col-span-2">
             <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
               <FiBriefcase className="text-purple-500" />
-              Expérience Professionnelle
+              Professional Experience
             </h3>
             <div className="relative">
               {/* Timeline Line */}
@@ -118,7 +118,7 @@ export default function Experience() {
                   <div className="glass-card rounded-xl p-6 card-hover">
                     {exp.current && (
                       <span className="inline-block px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-xs font-medium mb-3">
-                        En cours
+                        Current
                       </span>
                     )}
                     <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
@@ -159,7 +159,7 @@ export default function Experience() {
             {/* Education */}
             <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
               <span className="text-2xl">🎓</span>
-              Formation
+              Education
             </h3>
             <div className="space-y-6 mb-10">
               {education.map((edu, index) => (

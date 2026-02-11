@@ -14,18 +14,18 @@ const highlights = [
   },
   {
     icon: FiLayers,
-    title: 'Base de données',
+    title: 'Databases',
     description: 'MySQL, MongoDB, PostgreSQL, NoSQL'
   },
   {
     icon: FiUsers,
-    title: 'Travail d\'équipe',
+    title: 'Teamwork',
     description: 'Git, Scrum, Kanban, Jira, Communication'
   },
   {
     icon: FiZap,
     title: 'DevOps',
-    description: 'CI/CD, Cloud natif, Docker, Monitoring'
+    description: 'CI/CD, Cloud Native, Docker, Monitoring'
   },
 ]
 
@@ -43,10 +43,10 @@ export default function About() {
           className="text-center mb-16"
         >
           <h2 className="section-title">
-            À propos de <span className="gradient-text">Moi</span>
+            About <span className="gradient-text">Me</span>
           </h2>
           <p className="section-subtitle">
-            Découvrez mon parcours et ma passion pour le développement web
+            Discover my journey and my passion for web development
           </p>
         </motion.div>
 
@@ -78,7 +78,7 @@ export default function About() {
                 transition={{ duration: 3, repeat: Infinity }}
                 className="absolute -top-4 -right-4 glass rounded-2xl px-4 py-2"
               >
-                <span className="text-sm font-semibold gradient-text">Diplômée 2025</span>
+                <span className="text-sm font-semibold gradient-text">Graduated 2025</span>
               </motion.div>
               <motion.div
                 animate={{ y: [0, 10, 0] }}
@@ -97,41 +97,41 @@ export default function About() {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <h3 className="text-3xl font-bold mb-6">
-              Développeuse passionnée par la <span className="gradient-text">création web</span>
+              Developer passionate about <span className="gradient-text">web creation</span>
             </h3>
             <div className="space-y-4 text-gray-300 mb-8">
               <p>
-                Je suis Khadija Lahlou, développeuse web full stack diplômée en 2025.
-                J&apos;ai acquis une solide expérience à travers ma formation pratique et mes projets,
-                en développement web, en gestion de bases de données et en conception d&apos;interfaces.
+                I am Khadija Lahlou, a full stack web developer graduated in 2025.
+                I have gained solid experience through my hands-on training and projects
+                in web development, database management and interface design.
               </p>
               <p>
-                Actuellement en stage pré-emploi chez YMH Innovation à Casablanca, je travaille
-                sur des fonctionnalités en Python et JavaScript sous Odoo, et je développe
-                des interfaces modernes avec Next.js pour optimiser l&apos;expérience utilisateur.
+                Currently on a pre-employment internship at YMH Innovation in Casablanca, I work
+                on features in Python and JavaScript with Odoo, and I develop
+                modern interfaces with Next.js to optimize the user experience.
               </p>
               <p>
-                Je suis à la recherche d&apos;un poste dans lequel je pourrai mettre mes compétences
-                au service de projets innovants tout en continuant à apprendre et à évoluer.
+                I am looking for a position where I can put my skills
+                to work on innovative projects while continuing to learn and grow.
               </p>
             </div>
 
             {/* Personal Info */}
             <div className="grid grid-cols-2 gap-4 mb-8 text-sm">
               <div className="glass rounded-xl p-3">
-                <span className="text-gray-500">Localisation</span>
-                <p className="text-white font-medium">Casablanca, Maroc</p>
+                <span className="text-gray-500">Location</span>
+                <p className="text-white font-medium">Casablanca, Morocco</p>
               </div>
               <div className="glass rounded-xl p-3">
-                <span className="text-gray-500">Âge</span>
-                <p className="text-white font-medium">20 ans</p>
+                <span className="text-gray-500">Age</span>
+                <p className="text-white font-medium">20 years old</p>
               </div>
               <div className="glass rounded-xl p-3">
-                <span className="text-gray-500">Diplôme</span>
-                <p className="text-white font-medium">Technicien Spécialisé</p>
+                <span className="text-gray-500">Degree</span>
+                <p className="text-white font-medium">Specialized Technician</p>
               </div>
               <div className="glass rounded-xl p-3">
-                <span className="text-gray-500">Permis</span>
+                <span className="text-gray-500">License</span>
                 <p className="text-white font-medium">Type B</p>
               </div>
             </div>

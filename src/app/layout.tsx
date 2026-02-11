@@ -11,12 +11,12 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'Khadija Lahlou | Full Stack Developer',
-  description: 'Portfolio de Khadija Lahlou - Développeuse Full Stack passionnée par la création d\'applications web modernes et innovantes.',
+  description: 'Portfolio of Khadija Lahlou - Full Stack Developer passionate about building modern and innovative web applications.',
   keywords: ['developer', 'web developer', 'full stack', 'react', 'next.js', 'portfolio'],
   authors: [{ name: 'Khadija Lahlou' }],
   openGraph: {
     title: 'Khadija Lahlou | Full Stack Developer',
-    description: 'Développeuse Full Stack passionnée par la création d\'applications web modernes',
+    description: 'Full Stack Developer passionate about building modern web applications',
     type: 'website',
   },
 }
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} ${poppins.variable} font-sans antialiased`}>
         {children}
       </body>

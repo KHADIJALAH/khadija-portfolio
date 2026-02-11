@@ -13,7 +13,7 @@ import { SiOdoo } from 'react-icons/si'
 
 const skillCategories = [
   {
-    title: 'Développement Full-Stack',
+    title: 'Full-Stack Development',
     color: 'from-purple-500 to-pink-500',
     skills: [
       { name: 'PHP', icon: SiPhp, level: 90 },
@@ -37,7 +37,7 @@ const skillCategories = [
     ]
   },
   {
-    title: 'Back-end & Bases de données',
+    title: 'Back-end & Databases',
     color: 'from-green-500 to-emerald-500',
     skills: [
       { name: 'MySQL', icon: SiMysql, level: 90 },
@@ -47,7 +47,7 @@ const skillCategories = [
     ]
   },
   {
-    title: 'Gestion de projet & DevOps',
+    title: 'Project Management & DevOps',
     color: 'from-orange-500 to-red-500',
     skills: [
       { name: 'Git', icon: SiGit, level: 90 },
@@ -61,20 +61,20 @@ const skillCategories = [
 ]
 
 const softSkills = [
-  'Travail en équipe',
-  'Esprit d\'équipe',
-  'Autonomie',
-  'Sens des responsabilités',
-  'Adaptabilité',
-  'Capacité d\'analyse',
-  'Flexibilité',
+  'Teamwork',
+  'Team Spirit',
+  'Autonomy',
+  'Sense of Responsibility',
+  'Adaptability',
+  'Analytical Thinking',
+  'Flexibility',
   'Communication',
 ]
 
 const languages = [
-  { name: 'Arabe', level: 'Courant', percent: 100 },
-  { name: 'Français', level: 'Technique', percent: 85 },
-  { name: 'Anglais', level: 'Technique', percent: 75 },
+  { name: 'Arabic', level: 'Fluent', percent: 100 },
+  { name: 'French', level: 'Professional', percent: 85 },
+  { name: 'English', level: 'Professional', percent: 75 },
 ]
 
 export default function Skills() {
@@ -91,10 +91,10 @@ export default function Skills() {
           className="text-center mb-16"
         >
           <h2 className="section-title">
-            Mes <span className="gradient-text">Compétences</span>
+            My <span className="gradient-text">Skills</span>
           </h2>
           <p className="section-subtitle">
-            Technologies et outils que j&apos;utilise pour donner vie à vos projets
+            Technologies and tools I use to bring your projects to life
           </p>
         </motion.div>
 
@@ -151,7 +151,7 @@ export default function Skills() {
             className="glass-card rounded-2xl p-6"
           >
             <h3 className="text-xl font-bold mb-6 bg-gradient-to-r from-violet-500 to-purple-500 bg-clip-text text-transparent">
-              Compétences Personnelles
+              Soft Skills
             </h3>
             <div className="flex flex-wrap gap-3">
               {softSkills.map((skill, index) => (
@@ -176,7 +176,7 @@ export default function Skills() {
             className="glass-card rounded-2xl p-6"
           >
             <h3 className="text-xl font-bold mb-6 bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
-              Langues
+              Languages
             </h3>
             <div className="space-y-4">
               {languages.map((lang, index) => (
@@ -211,7 +211,7 @@ export default function Skills() {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="mt-8 text-center"
         >
-          <p className="text-gray-400 mb-4">Méthodologies</p>
+          <p className="text-gray-400 mb-4">Methodologies</p>
           <div className="flex flex-wrap justify-center gap-4">
             {['Scrum', 'Kanban', 'Agile', 'CI/CD'].map((method, index) => (
               <motion.span

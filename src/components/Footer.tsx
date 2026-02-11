@@ -4,11 +4,11 @@ import { motion } from 'framer-motion'
 import { FiGithub, FiLinkedin, FiMail, FiHeart, FiArrowUp } from 'react-icons/fi'
 
 const navLinks = [
-  { name: 'Accueil', href: '#home' },
-  { name: 'À propos', href: '#about' },
-  { name: 'Compétences', href: '#skills' },
-  { name: 'Projets', href: '#projects' },
-  { name: 'Parcours', href: '#experience' },
+  { name: 'Home', href: '#home' },
+  { name: 'About', href: '#about' },
+  { name: 'Skills', href: '#skills' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'Experience', href: '#experience' },
   { name: 'Contact', href: '#contact' },
 ]
 
@@ -36,8 +36,8 @@ export default function Footer() {
               Khadija Lahlou
             </a>
             <p className="text-gray-400 mb-6">
-              Développeuse Web Full Stack passionnée par la création
-              d&apos;applications web modernes et innovantes.
+              Full Stack Web Developer passionate about building
+              modern and innovative web applications.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (
@@ -85,11 +85,11 @@ export default function Footer() {
                   +212 603 175 493
                 </a>
               </li>
-              <li>Bouskoura, Casablanca, Maroc</li>
+              <li>Bouskoura, Casablanca, Morocco</li>
               <li className="pt-2">
                 <span className="inline-flex items-center gap-2 text-green-400 text-sm">
                   <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                  Disponible pour opportunités
+                  Available for opportunities
                 </span>
               </li>
             </ul>
@@ -99,9 +99,9 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 text-sm flex items-center gap-2">
-            &copy; {new Date().getFullYear()} Khadija Lahlou. Fait avec
+            &copy; {new Date().getFullYear()} Khadija Lahlou. Made with
             <FiHeart className="text-red-500" />
-            au Maroc
+            in Morocco
           </p>
 
           <motion.button

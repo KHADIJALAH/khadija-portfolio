@@ -5,12 +5,12 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { FiMenu, FiX } from 'react-icons/fi'
 
 const navLinks = [
-  { name: 'Accueil', href: '#home' },
-  { name: 'À propos', href: '#about' },
-  { name: 'Compétences', href: '#skills' },
-  { name: 'Projets', href: '#projects' },
-  { name: 'Expérience', href: '#experience' },
-  { name: 'Témoignages', href: '#testimonials' },
+  { name: 'Home', href: '#home' },
+  { name: 'About', href: '#about' },
+  { name: 'Skills', href: '#skills' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'Experience', href: '#experience' },
+  { name: 'Testimonials', href: '#testimonials' },
   { name: 'Contact', href: '#contact' },
 ]
 
@@ -70,7 +70,7 @@ export default function Navbar() {
             whileTap={{ scale: 0.95 }}
             className="hidden md:block btn-primary text-sm"
           >
-            Contactez-moi
+            Contact me
           </motion.a>
 
           {/* Mobile Menu Button */}
@@ -108,7 +108,7 @@ export default function Navbar() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="block btn-primary text-center text-sm mt-4"
               >
-                Contactez-moi
+                Contact me
               </a>
             </div>
           </motion.div>
