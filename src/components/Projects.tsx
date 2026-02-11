@@ -42,10 +42,10 @@ const projects = [
   {
     id: 4,
     title: 'JetStream - Travel Management',
-    description: 'Travel management platform featuring a landing page with destination discovery, a dashboard with trip statistics and budget tracker, and a booking system with search filters and real-time results.',
+    description: 'Complete travel and tourism booking platform with hotel, flight, restaurant, activity, cruise, and rental car management. Features admin dashboard, user authentication with 2FA, reservation system, forum, reviews, and notifications.',
     image: '/images/project4.jpg',
-    tags: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-    category: 'frontend',
+    tags: ['Laravel 12', 'Livewire', 'Tailwind CSS', 'Jetstream', 'Spatie Media'],
+    category: 'fullstack',
     github: 'https://github.com/KHADIJALAH/jetstream-app',
     live: '#',
     color: 'from-indigo-500 to-blue-500'
