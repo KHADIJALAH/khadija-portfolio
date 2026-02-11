@@ -41,14 +41,36 @@ const projects = [
   },
   {
     id: 4,
-    title: 'Personal Portfolio',
-    description: 'My personal portfolio with a modern dark theme design, smooth Framer Motion animations, EmailJS contact form and interactive navigation.',
+    title: 'JetStream - Travel Management',
+    description: 'Travel management platform with trip planning, booking system, budget tracker, interactive maps and destination discovery. Modern responsive design.',
     image: '/images/project4.jpg',
-    tags: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'EmailJS'],
+    tags: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'Laravel'],
+    category: 'fullstack',
+    github: 'https://github.com/KHADIJALAH/jetstream-app',
+    live: '#',
+    color: 'from-indigo-500 to-blue-500'
+  },
+  {
+    id: 5,
+    title: 'LaLibrary - Book Management',
+    description: 'Library management system with book catalog, borrowing system, user authentication, shopping cart and admin dashboard for managing inventory.',
+    image: '/images/project5.jpg',
+    tags: ['PHP', 'MySQL', 'Bootstrap', 'JavaScript'],
+    category: 'fullstack',
+    github: 'https://github.com/KHADIJALAH/Lalibrary',
+    live: '#',
+    color: 'from-emerald-500 to-green-500'
+  },
+  {
+    id: 6,
+    title: 'Personal Portfolio',
+    description: 'My personal portfolio with a modern dark theme design, smooth Framer Motion animations, contact form and interactive navigation.',
+    image: '/images/project6.jpg',
+    tags: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
     category: 'frontend',
     github: 'https://github.com/KHADIJALAH/khadija-portfolio',
-    live: '#',
-    color: 'from-green-500 to-emerald-500'
+    live: 'https://khadija-portfolio-nine.vercel.app',
+    color: 'from-violet-500 to-purple-500'
   },
 ]
 
